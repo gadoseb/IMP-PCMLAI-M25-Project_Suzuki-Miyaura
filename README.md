@@ -15,3 +15,35 @@ The Suzuki-Miyaura coupling reaction has been used in the synthesis of numerous 
 4. Conclusions
 
 For the details about the packages used in this model, please refer to the beginning of each section of the notebook.
+
+# Files in the repository 
+
+- Suzuki-Miyaura_Capstone Project.ipynb = Jupyter Notebook
+- Suzuki_coupling_scheme.jpg = Reaction scheme of the investigated Suzuki-Miyaura coupling
+- Literature Data_colon_delimited.csv = Literature data dataset
+- dataset_withtestset.csv = Experimental data dataset
+
+# Dataset
+
+The database was built from various literature data (which can be tracked in the `article` column) with the following instances:
+
+- **solvent_names**: a field to store the names of the solvents used in a chemical reaction.
+- **solvent_class**: a field to store the class of the solvents used in a chemical reaction, such as polar or nonpolar.
+- **base_names**: a field to store the names of the bases used in a chemical reaction.
+- **base_class**: a field to store the class of the bases used in a chemical reaction, such as strong or weak.
+- **temperature**: a field to store the temperature at which the chemical reaction was performed in $^\circ$ C.
+- **ligand**: a field to store the type of ligand used in the chemical reaction.
+- **Pd source**: a field to store the source of Pd catalyst used in the chemical reaction.
+- **yield**: a field to store the yield of the chemical reaction.
+- **article**: a field to store the article/literature reference where the reaction was reported.
+- **reaction_smiles**: a field to store the SMILES notation for the chemical reaction.
+- **boronate**: a field to store the SMILES notation for the boronate compound used in the chemical reaction.
+- **bromide**: a field to store the SMILES notation for the bromide compund used in the chemical reaction.
+- **condition_string**: a field to store a string representing the reaction conditions (solvent, base and ligand).
+
+This type of database is used to store and organize information about a set of chemical reactions, such as the conditions under which the reactions were performed, the reactants and catalysts used, and the yields of the reactions. 
+
+SMILES (Simplified Molecular Input Line Entry System) is a notation for describing the structure of a molecule using a simple ASCII string. Each atom in a SMILES string is represented by a symbol, such as C for carbon, N for nitrogen, and O for oxygen, and the bonds between atoms are represented by characters such as "-" for single bonds, "=" for double bonds, and "#" for triple bonds. This notation can be read by the `rdkit` package.
+
+The original database can be found in the `open_reaction_database_files` folder of the following repository.
+N. H. Angello et al., Closed-loop optimization of general conditions for heteroaryl Suzuki coupling, version 0.1.2, Zenodo (2022); https://doi.org/10.5281/zenodo.7099435
