@@ -13,3 +13,5 @@ The Suzuki-Miyaura coupling reaction has been used in the synthesis of numerous 
 2. PCA and Clustering based on Chemical Similarity
 3. Suzuki-Miyaura Coupling Reaction Prediction - Regression Approach
 4. Conclusions
+
+For the details about the packages used in this model, please refer to the beginning of each section of the notebook.
